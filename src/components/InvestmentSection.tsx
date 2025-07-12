@@ -32,8 +32,12 @@ const InvestmentSection = () => {
   ];
 
   return (
-    <section className="py-20 px-4 bg-accent/30">
-      <div className="container mx-auto max-w-6xl">
+    <section className="relative py-20 px-4 bg-accent/30 overflow-hidden">
+      {/* Decorative drops */}
+      <div className="drop-shape drop-large top-0 right-1/4 drop-animated" style={{ animationDelay: '3s' }}></div>
+      <div className="drop-shape drop-medium bottom-10 -left-20" style={{ animationDelay: '6s' }}></div>
+      
+      <div className="container mx-auto max-w-6xl relative z-10">
         <div className="text-center mb-12">
           <h2 className="text-4xl md:text-5xl font-manrope font-bold text-foreground mb-4">
             Как инвестировать?

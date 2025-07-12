@@ -47,6 +47,11 @@ All colors MUST be HSL.
     /* Shadows */
     --shadow-card: 0 4px 20px hsl(263 96% 43% / 0.1);
     --shadow-glow: 0 0 40px hsl(263 96% 60% / 0.2);
+    
+    /* Drop shapes */
+    --drop-light: hsl(263 96% 90% / 0.3);
+    --drop-medium: hsl(263 96% 70% / 0.4);
+    --drop-dark: hsl(263 96% 43% / 0.2);
 
     --sidebar-background: 0 0% 98%;
 
@@ -112,4 +117,46 @@ All colors MUST be HSL.
   body {
     @apply bg-background text-foreground;
   }
+}
+
+/* Drop-shaped decorative elements */
+.drop-shape {
+  border-radius: 50% 50% 50% 50% / 60% 60% 40% 40%;
+  position: absolute;
+  pointer-events: none;
+}
+
+.drop-large {
+  width: 400px;
+  height: 500px;
+  background: var(--drop-light);
+  transform: rotate(-15deg);
+}
+
+.drop-medium {
+  width: 300px;
+  height: 380px;
+  background: var(--drop-medium);
+  transform: rotate(25deg);
+}
+
+.drop-small {
+  width: 200px;
+  height: 250px;
+  background: var(--drop-dark);
+  transform: rotate(-10deg);
+}
+
+/* Animation for drops */
+@keyframes float {
+  0%, 100% {
+    transform: translateY(0px) rotate(-15deg);
+  }
+  50% {
+    transform: translateY(-20px) rotate(-15deg);
+  }
+}
+
+.drop-animated {
+  animation: float 6s ease-in-out infinite;
 }

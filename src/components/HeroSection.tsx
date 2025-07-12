@@ -2,8 +2,13 @@ import { Button } from "@/components/ui/button";
 
 const HeroSection = () => {
   return (
-    <section className="min-h-screen bg-gradient-hero flex items-center justify-center px-4 py-20">
-      <div className="container mx-auto text-center max-w-4xl">
+    <section className="relative min-h-screen bg-gradient-hero flex items-center justify-center px-4 py-20 overflow-hidden">
+      {/* Decorative drops */}
+      <div className="drop-shape drop-large top-10 -right-20 drop-animated" style={{ animationDelay: '0s' }}></div>
+      <div className="drop-shape drop-medium top-1/3 -left-10" style={{ animationDelay: '2s' }}></div>
+      <div className="drop-shape drop-small bottom-20 right-1/4" style={{ animationDelay: '4s' }}></div>
+      
+      <div className="container mx-auto text-center max-w-4xl relative z-10">
         <div className="mb-8">
           <div className="inline-block bg-gradient-primary bg-clip-text text-transparent font-manrope font-bold text-2xl mb-4">
             THE
