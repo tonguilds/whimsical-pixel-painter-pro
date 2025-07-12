@@ -32,15 +32,8 @@ const InvestmentSection = () => {
   ];
 
   return (
-    <section className="py-20 px-4 bg-accent/30 relative overflow-hidden">
-      {/* Декоративные линии и фигуры */}
-      <div className="floating-shapes">
-        <div className="shape-line w-96 h-2 top-32 left-0 rotate-12 bg-gradient-to-r from-primary/30 to-transparent"></div>
-        <div className="shape-line w-64 h-1 bottom-40 right-10 -rotate-45 bg-gradient-to-l from-primary/20 to-transparent"></div>
-        <div className="absolute top-20 right-1/4 w-48 h-48 rounded-full border-2 border-primary/10 animate-pulse" style={{animationDelay: '1s'}}></div>
-      </div>
-      
-      <div className="container mx-auto max-w-6xl relative z-10">
+    <section className="py-20 px-4 bg-accent/30">
+      <div className="container mx-auto max-w-6xl">
         <div className="text-center mb-12">
           <h2 className="text-4xl md:text-5xl font-manrope font-bold text-foreground mb-4">
             Как инвестировать?

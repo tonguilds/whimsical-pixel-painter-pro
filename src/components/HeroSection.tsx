@@ -2,27 +2,8 @@ import { Button } from "@/components/ui/button";
 
 const HeroSection = () => {
   return (
-    <section className="min-h-screen bg-gradient-hero flex items-center justify-center px-4 py-20 relative overflow-hidden">
-      {/* Большие декоративные формы как в примере */}
-      <div className="absolute inset-0 overflow-hidden pointer-events-none">
-        {/* Большой круг справа */}
-        <div className="absolute -top-32 -right-32 w-96 h-96 rounded-full bg-gradient-primary opacity-30"></div>
-        
-        {/* Средний круг слева */}
-        <div className="absolute top-1/2 -left-48 w-80 h-80 rounded-full bg-gradient-to-br from-primary/40 to-primary-glow/20"></div>
-        
-        {/* Малый круг внизу */}
-        <div className="absolute -bottom-24 right-1/4 w-48 h-48 rounded-full bg-primary/20"></div>
-        
-        {/* Кривые линии как в первом примере */}
-        <svg className="absolute inset-0 w-full h-full" viewBox="0 0 1200 800" fill="none">
-          <path d="M0,400 Q300,150 600,400 Q900,650 1200,400" stroke="hsl(263 96% 60%)" strokeWidth="3" fill="none" opacity="0.6" />
-          <path d="M0,300 Q400,600 800,300 Q1000,100 1200,300" stroke="hsl(263 96% 43%)" strokeWidth="2" fill="none" opacity="0.4" />
-          <path d="M-200,500 Q200,200 600,500 Q1000,800 1400,500" stroke="hsl(263 96% 60%)" strokeWidth="4" fill="none" opacity="0.3" />
-        </svg>
-      </div>
-      
-      <div className="container mx-auto text-center max-w-4xl relative z-10">
+    <section className="min-h-screen bg-gradient-hero flex items-center justify-center px-4 py-20">
+      <div className="container mx-auto text-center max-w-4xl">
         <div className="mb-8">
           <div className="inline-block bg-gradient-primary bg-clip-text text-transparent font-manrope font-bold text-2xl mb-4">
             THE

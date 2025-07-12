@@ -2,16 +2,8 @@ import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 
 const BusinessModelSection = () => {
   return (
-    <section className="py-20 px-4 bg-background relative overflow-hidden">
-      {/* Декоративные элементы */}
-      <div className="decorative-curves">
-        <svg className="absolute bottom-0 left-0 w-full h-1/2" viewBox="0 0 1200 300" fill="none">
-          <path d="M0,150 Q300,50 600,150 T1200,150" stroke="hsl(263 96% 43% / 0.2)" strokeWidth="3" fill="none" />
-          <path d="M200,250 Q500,100 800,250 T1400,250" stroke="hsl(263 96% 60% / 0.1)" strokeWidth="2" fill="none" />
-        </svg>
-      </div>
-      
-      <div className="container mx-auto max-w-6xl relative z-10">
+    <section className="py-20 px-4 bg-background">
+      <div className="container mx-auto max-w-6xl">
         <h2 className="text-4xl md:text-5xl font-manrope font-bold text-center text-foreground mb-4">
           Децентрализованная бизнес-модель
         </h2>

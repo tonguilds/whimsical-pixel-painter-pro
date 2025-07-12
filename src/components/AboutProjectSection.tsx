@@ -1,19 +1,7 @@
 const AboutProjectSection = () => {
   return (
-    <section className="py-20 px-4 bg-gradient-background relative overflow-hidden">
-      {/* Большие круговые формы как в третьем примере */}
-      <div className="absolute inset-0 overflow-hidden pointer-events-none">
-        {/* Огромный круг справа */}
-        <div className="absolute top-10 right-0 w-[500px] h-[500px] rounded-full border-4 border-primary/20 translate-x-1/3"></div>
-        
-        {/* Средний круг слева внизу */}
-        <div className="absolute bottom-0 left-0 w-80 h-80 rounded-full bg-primary/10 -translate-x-1/4 translate-y-1/4"></div>
-        
-        {/* Малый круг по центру */}
-        <div className="absolute top-1/2 left-1/3 w-32 h-32 rounded-full border-2 border-primary/30 animate-pulse"></div>
-      </div>
-      
-      <div className="container mx-auto max-w-4xl text-center relative z-10">
+    <section className="py-20 px-4 bg-accent/30">
+      <div className="container mx-auto max-w-4xl text-center">
         <h2 className="text-4xl md:text-5xl font-manrope font-bold text-foreground mb-8">
           Что такое The COD Project?
         </h2>
