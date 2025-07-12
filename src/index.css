@@ -130,6 +130,7 @@ All colors MUST be HSL.
   width: 400px;
   height: 500px;
   background: var(--drop-light);
+  border-radius: 0% 100% 0% 100% / 100% 0% 100% 0%;
   transform: rotate(-15deg);
 }
 
@@ -137,6 +138,7 @@ All colors MUST be HSL.
   width: 300px;
   height: 380px;
   background: var(--drop-medium);
+  border-radius: 0% 100% 0% 100% / 100% 0% 100% 0%;
   transform: rotate(25deg);
 }
 
@@ -144,6 +146,7 @@ All colors MUST be HSL.
   width: 200px;
   height: 250px;
   background: var(--drop-dark);
+  border-radius: 0% 100% 0% 100% / 100% 0% 100% 0%;
   transform: rotate(-10deg);
 }
 
