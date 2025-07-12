@@ -2,8 +2,26 @@ import { Button } from "@/components/ui/button";
 
 const HeroSection = () => {
   return (
-    <section className="min-h-screen bg-gradient-hero flex items-center justify-center px-4 py-20">
-      <div className="container mx-auto text-center max-w-4xl">
+    <section className="min-h-screen bg-gradient-hero flex items-center justify-center px-4 py-20 relative overflow-hidden">
+      {/* Декоративные элементы */}
+      <div className="decorative-curves">
+        <svg className="absolute top-0 left-0 w-full h-full" viewBox="0 0 1200 800" fill="none">
+          <path d="M0,400 Q300,200 600,400 T1200,400" stroke="hsl(263 96% 43% / 0.3)" strokeWidth="2" fill="none" />
+          <path d="M0,300 Q400,500 800,300 T1600,300" stroke="hsl(263 96% 60% / 0.2)" strokeWidth="3" fill="none" />
+          <path d="M-200,600 Q200,100 600,600 T1400,600" stroke="hsl(263 96% 43% / 0.15)" strokeWidth="4" fill="none" />
+        </svg>
+      </div>
+      
+      {/* Плавающие фигуры */}
+      <div className="floating-shapes">
+        <div className="shape-circle w-32 h-32 top-20 left-20" style={{animationDelay: '0s'}}></div>
+        <div className="shape-circle w-16 h-16 top-40 right-40" style={{animationDelay: '1s'}}></div>
+        <div className="shape-circle w-24 h-24 bottom-32 left-32" style={{animationDelay: '2s'}}></div>
+        <div className="shape-line w-48 h-1 top-60 right-20 rotate-45" style={{animationDelay: '0.5s'}}></div>
+        <div className="shape-line w-32 h-1 bottom-48 right-48 -rotate-12" style={{animationDelay: '1.5s'}}></div>
+      </div>
+      
+      <div className="container mx-auto text-center max-w-4xl relative z-10">
         <div className="mb-8">
           <div className="inline-block bg-gradient-primary bg-clip-text text-transparent font-manrope font-bold text-2xl mb-4">
             THE

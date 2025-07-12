@@ -1,7 +1,14 @@
 const AboutProjectSection = () => {
   return (
-    <section className="py-20 px-4 bg-accent/30">
-      <div className="container mx-auto max-w-4xl text-center">
+    <section className="py-20 px-4 bg-accent/30 relative overflow-hidden">
+      {/* Круговые элементы как на третьем примере */}
+      <div className="floating-shapes">
+        <div className="absolute top-10 left-10 w-96 h-96 rounded-full border-2 border-primary/20 animate-pulse" style={{animationDelay: '0s'}}></div>
+        <div className="absolute bottom-20 right-20 w-64 h-64 rounded-full border border-primary/10 animate-pulse" style={{animationDelay: '1s'}}></div>
+        <div className="absolute top-1/2 left-1/4 w-32 h-32 rounded-full bg-primary/5 animate-pulse" style={{animationDelay: '2s'}}></div>
+      </div>
+      
+      <div className="container mx-auto max-w-4xl text-center relative z-10">
         <h2 className="text-4xl md:text-5xl font-manrope font-bold text-foreground mb-8">
           Что такое The COD Project?
         </h2>

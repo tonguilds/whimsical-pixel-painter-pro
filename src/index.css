@@ -47,6 +47,11 @@ All colors MUST be HSL.
     /* Shadows */
     --shadow-card: 0 4px 20px hsl(263 96% 43% / 0.1);
     --shadow-glow: 0 0 40px hsl(263 96% 60% / 0.2);
+    
+    /* Decorative elements */
+    --curve-1: M0,150 Q200,50 400,150 T800,150;
+    --curve-2: M0,100 Q150,200 300,100 T600,100;
+    --curve-3: M0,200 Q250,0 500,200 T1000,200;
 
     --sidebar-background: 0 0% 98%;
 
@@ -111,5 +116,27 @@ All colors MUST be HSL.
 
   body {
     @apply bg-background text-foreground;
+  }
+}
+
+@layer components {
+  .decorative-curves {
+    @apply absolute inset-0 overflow-hidden pointer-events-none;
+  }
+  
+  .curve-element {
+    @apply absolute opacity-20;
+  }
+  
+  .floating-shapes {
+    @apply absolute inset-0 overflow-hidden pointer-events-none;
+  }
+  
+  .shape-circle {
+    @apply absolute rounded-full bg-primary/10 animate-pulse;
+  }
+  
+  .shape-line {
+    @apply absolute bg-gradient-to-r from-primary/20 to-transparent;
   }
 }
