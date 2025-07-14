@@ -2,12 +2,8 @@ import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 
 const BusinessModelSection = () => {
   return (
-    <section className="relative py-20 px-4 bg-background overflow-hidden">
-      {/* Decorative drops */}
-      <div className="drop-shape drop-medium top-10 -right-32 drop-animated" style={{ animationDelay: '1s' }}></div>
-      <div className="drop-shape drop-small bottom-20 -left-24" style={{ animationDelay: '4s' }}></div>
-      
-      <div className="container mx-auto max-w-6xl relative z-10">
+    <section className="py-20 px-4 bg-background">
+      <div className="container mx-auto max-w-6xl">
         <h2 className="text-4xl md:text-5xl font-manrope font-bold text-center text-foreground mb-4">
           Децентрализованная бизнес-модель
         </h2>

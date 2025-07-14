@@ -1,11 +1,7 @@
 const AboutProjectSection = () => {
   return (
-    <section className="relative py-20 px-4 bg-accent/30 overflow-hidden">
-      {/* Decorative drops */}
-      <div className="drop-shape drop-large top-1/4 -left-40 drop-animated" style={{ animationDelay: '2s' }}></div>
-      <div className="drop-shape drop-small top-0 right-1/3" style={{ animationDelay: '5s' }}></div>
-      
-      <div className="container mx-auto max-w-4xl text-center relative z-10">
+    <section className="py-20 px-4 bg-accent/30">
+      <div className="container mx-auto max-w-4xl text-center">
         <h2 className="text-4xl md:text-5xl font-manrope font-bold text-foreground mb-8">
           Что такое The COD Project?
         </h2>
