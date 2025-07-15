@@ -1,16 +1,19 @@
 import { Button } from "@/components/ui/button";
-import codLogo from "@/assets/cod-logo.png";
 
 const HeroSection = () => {
   return (
     <section className="min-h-screen bg-gradient-hero flex items-center justify-center px-4 py-20">
       <div className="container mx-auto text-center max-w-4xl">
         <div className="mb-8">
-          <img 
-            src={codLogo} 
-            alt="THE COD PROJECT" 
-            className="mx-auto max-w-md w-full h-auto"
-          />
+          <div className="inline-block bg-gradient-primary bg-clip-text text-transparent font-manrope font-bold text-2xl mb-4">
+            THE
+          </div>
+          <h1 className="text-6xl md:text-8xl font-manrope font-bold bg-gradient-primary bg-clip-text text-transparent mb-2">
+            COD
+          </h1>
+          <div className="inline-block bg-gradient-primary bg-clip-text text-transparent font-manrope font-bold text-2xl">
+            PROJECT
+          </div>
         </div>
         
         <h2 className="text-2xl md:text-3xl font-manrope font-semibold text-foreground mb-4">
